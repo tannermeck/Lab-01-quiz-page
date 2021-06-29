@@ -9,39 +9,44 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Oaklee - the best dog ever</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
-    </header>
     <main>
        <section>
            <h1>All About Oaklee</h1>
            <img src="../styles/golden.jpeg">
-
-           <p>
-               Hello my name is Oaklee, like the sunglasses.
-           </p>
-           <p>Here are my favorite activities:</p>
-           <ul>
-                <li>Snacking</li>
-                <li>Snoozing</li>
-                <li>Socializing</li>
+           <h1>Today we will go over a little bit about me</h1>
+            <ol class="about-me">
+                <li>About my family and I</li>
+                <li>My favorite things to do</li>
+                <li>A quiz to test your knowledge</li>
+            </ol>
+        </section>
+        <section>
+            <h1>My name is Oaklee (like the sunglasses)<h2>
+            <p class="about-me">I am a 3 year old Golden Retriever that has a love for my friends.
+                I also enjoy going to the beach, mainly so I can swim in the Ocean.
+                I also have a brother named <em>Colt</em>. We go to the dog park twice a week, where
+                I can meet new friends and look for squirrels in all the trees.
+            </p>
+           <h1>Here are my favorite activities:</h1>
+           <ul class="about-me">
+                <li>Eating my parents food</li>
+                <li>Sleeping when I'm bored</li>
+                <li>Barking at visitors</li>
             </ul>
-       </section>
-       <section>
+        </section>
+        <section>
            <h1>Quiz Time!</h1>
            <button id="click-me">Click here to launch quiz!</button>
-            <p id="results">RESULTS WILL GO HERE</p>
+            <h1 id="results">RESULTS WILL GO HERE</h1>
         </section>
         
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>

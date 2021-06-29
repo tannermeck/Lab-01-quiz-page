@@ -22,7 +22,8 @@ quizButton.addEventListener('click', ()=> {
         if (isYes(ans3)) {
             score++;
         }
-        results.textContent = `${name} your score is ${score}/3`;
+        let finalScore = score / 3 * 100;
+        results.textContent = `${name} your score is ${Math.round(finalScore)}%`;
     } else {
         console.log('user cancelled');
     }
