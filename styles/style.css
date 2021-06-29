@@ -28,6 +28,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color:burlywood;
 }
 
 section {
@@ -111,3 +112,16 @@ footer {
     }
 
   }
+img {
+    height: 400px;
+    width: 500px;
+    border-radius: 250px;
+}
+h1 {
+    font-family: cursive;
+    font-size: 25px;
+    font-weight:bolder;
+}
+p {
+    font-family: helvetica;
+}

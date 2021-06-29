@@ -22,7 +22,7 @@ quizButton.addEventListener('click', ()=> {
         if (isYes(ans3)) {
             score++;
         }
-        results.textContent = `${name} your score is ${score}`;
+        results.textContent = `${name} your score is ${score}/3`;
     } else {
         console.log('user cancelled');
     }
