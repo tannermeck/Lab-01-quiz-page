@@ -1,4 +1,4 @@
-import { isYes } from "./utils";
+import { isYes } from './utils.js';
 
 const quizButton = document.getElementById('click-me');
 const results = document.getElementById('results');
@@ -22,7 +22,7 @@ quizButton.addEventListener('click', ()=> {
         if (isYes(ans3)) {
             score++;
         }
-        console.log(score);
+        results.textContent = `${name} your score is ${score}`;
     } else {
         console.log('user cancelled');
     }
