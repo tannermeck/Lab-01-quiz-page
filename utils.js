@@ -1,0 +1,10 @@
+export function isYes(word){
+    //return true or false
+    word = word.toLowerCase();
+
+    if (word === 'yes' || word === 'y'){
+        return true;
+    } else {
+        return false;
+    }
+}

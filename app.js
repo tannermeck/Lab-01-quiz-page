@@ -1,3 +1,5 @@
+import { isYes } from "./utils";
+
 const quizButton = document.getElementById('click-me');
 const results = document.getElementById('results');
 
@@ -10,7 +12,17 @@ quizButton.addEventListener('click', ()=> {
         const ans2 = prompt('Do I like squirrels?');
         const ans3 = prompt('Do I like to bark at the UPS guy?');
         console.log(name, ans1, ans2, ans3);
-        
+        let score = 0;
+        if (isYes(ans1)) {
+            score++;
+        }
+        if (isYes(ans2)) {
+            score++;
+        }
+        if (isYes(ans3)) {
+            score++;
+        }
+        console.log(score);
     } else {
         console.log('user cancelled');
     }
