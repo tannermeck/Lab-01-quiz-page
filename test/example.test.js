@@ -22,6 +22,18 @@ test('should return true for "YES" strings', assert => {
     const actual = isYes(YESString);
     assert.equal(actual, expected);
 });
+test('should return true for "yepp" strings', assert => {
+    const yeppStrings = 'yepp';
+    const expected = true;
+    const actual = isYes(yeppStrings);
+    assert.equal(actual, expected);
+});
+test('should return true for "yeah" strings', assert => {
+    const yeahStrings = 'yeah';
+    const expected = true;
+    const actual = isYes(yeahStrings);
+    assert.equal(actual, expected);
+})
 test('should return false for non yes-y string', assert => {
     const noString = 'no';
     const expected = false;
