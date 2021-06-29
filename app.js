@@ -1,8 +1,6 @@
-// import functions and grab DOM elements
+const quizButton = document.getElementById('click-me');
+const results = document.getElementById('results');
 
-// initialize state
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+quizButton.addEventListener('click', ()=> {
+  console.log()
+})
