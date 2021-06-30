@@ -37,5 +37,3 @@ quizButton.addEventListener('click', ()=> {
         console.log('user cancelled');
     }
 });
-
-//alert the user quiz is complete and results will be written on webpage
