@@ -33,7 +33,7 @@ test('should return true for "yeah" strings', assert => {
     const expected = true;
     const actual = isYes(yeahStrings);
     assert.equal(actual, expected);
-})
+});
 test('should return false for non yes-y string', assert => {
     const noString = 'no';
     const expected = false;

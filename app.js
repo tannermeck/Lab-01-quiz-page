@@ -2,6 +2,7 @@ import { isYes } from './utils.js';
 
 const quizButton = document.getElementById('click-me');
 const results = document.getElementById('results');
+const gratitude = document.getElementById('gratitude');
 
 quizButton.addEventListener('click', ()=> {
     const confirmed = confirm('Would you like to start the quiz');
@@ -22,9 +23,19 @@ quizButton.addEventListener('click', ()=> {
         if (isYes(ans3)) {
             score++;
         }
+        alert('Test Complete, click "OK" to see score');
         let finalScore = score / 3 * 100;
         results.textContent = `${name} your score is ${Math.round(finalScore)}%`;
+        if (finalScore > 67) {
+            gratitude.textContent = `(WOOHOO, YOU GOT ${finalScore}%)`;
+            results.style.color = 'green';
+        } else {
+            gratitude.textContent = `(LETS TRY AGAIN)`;
+            results.style.color = 'red';
+        }
     } else {
         console.log('user cancelled');
     }
 });
+
+//alert the user quiz is complete and results will be written on webpage
